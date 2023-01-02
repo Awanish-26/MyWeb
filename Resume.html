@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #212121;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .complex {
+      display: flex;
+      margin: 2.5rem;
+      background-image: linear-gradient(to bottom left ,#2b2b2b, #252525);
+      background-blend-mode: soft-light;
+      border: solid 2px #4fff98; 
+      border-radius: 20px;
+    }
+    
+    img{
+      margin: 2.5rem;
+      width: 16rem;
+      height: 16rem;
+      border:3px solid  #4fff98;
+      border-radius: 50%;
+      
+    }
+    img:hover{
+      filter:saturate(2%);
+      transition: all 0.4s;
+    }
+    .rside{
+      float: right;
+      margin-inline-end: auto;
+      padding: 2rem;
+      border-left: 2px solid #4fff98;
+    }
+           
+    h1 , h2 {
+      color: #4fff98;
+      margin-block: 0.5rem;
+    }
+    
+    p{
+      color: #f0f0f0;
+      font-size: 18px;
+    }
+    
+    li{
+      color: #f0f0f0;
+      list-style-type: square;
+      margin-inline-start: 16px;
+      font-size: large;
+    }
+    a{
+      font-size:18px ;
+      text-decoration: none;
+      line-height: 32px;
+      color: #bababa;
+    }
+    a:hover{
+      color: #ffffff;
+      transition: all 0.1s;
+    }
+        
+    @media all and (max-width: 640px) {
+      .complex{
+        display: inline-block;
+        margin: 0%;
+        border: none;
+        border-radius: 0%;
+      }
+      .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rside{
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="complex">
+    <div class="image">
+      <img src="Resources/images/img.png" alt="This is a image" />
+    </div>
+      <div class="rside">
+        <h1>About</h1>
+        <p>
+          I am a student and just compleated 12th standard. <br />I am
+          so much intrested in computers and coding. <br />
+          I had compleated some of the web development <br />
+          projects but as a begnnier.<br />
+        </p>
+
+        <h2>My Strengths</h2>       
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ut!</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ut!</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ut!</li>
+        
+        <h2>Qualifications</h2>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, doloribus.</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, doloribus.</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, doloribus.</li>
+
+        <h2>Contat No</h2>   <p>+91256984336</p>       
+        <h2>Address  </h2>   <p>chaukaghat,varanasi</p>         
+        <h2>Social Media</h2>
+        <a href="https://www.instgram.com">Instagaram</a>
+        <br>
+        <a href="https://www.facebook.com">Facebook</a> 
+      </div>
+    </div>
+</body>
+</html>
