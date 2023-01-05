@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="Resources/CSS/payment-form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="FaviconB/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FaviconB/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FaviconB/favicon-16x16.png">
+    <link rel="manifest" href="FaviconB/site.webmanifest">
+  </head>
+  <body>
+
+    <!-- Navbar links -->
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyWeb</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-sm-auto text-center">
+            <a class="nav-link" href="index.html" aria-current="page">Home</a>
+            <a class="nav-link" href="Crud.html">Curd App</a>
+            <a class="nav-link" href="Resume.html">Rusume</a>
+            <a class="nav-link active" href="payment-form.html">Form</a>
+            <a class="nav-link" href="Game.html">Game</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <form action="" class="form">
+      <h1 class="text-center my-2">Payment Form</h1>    
+      <hr class="border border-2">
+      <h2 >Contact Information</h2>
+      <p class="text-danger fs-6">Required Feilds are followed by *</p>
+
+      <label for="name">Name* :</label>
+      <input type="text" name="name" id="name" placeholder="eg;Rakesh Kumar" required>
+       
+      <label for="gender">Gender* :</label>
+        <select name="gender" id="select">
+          <option disabled selected>--Select any one--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+      <label for="address">Address * :</label>
+      <input type="text" name="address" id="address" required>
+
+      <label for="email">Email* :</label>
+        <input type="email" name="email" id="email" required />
+
+      <label for="pincode">Pincode* : </label> 
+        <input type="password" name="pincode" id="pincode" required/>
+
+      <hr class="border border-2">
+
+      <h2>Payment Information</h2>
+
+      <label for="card_type">Card type* :</label>
+          <select name="card_type" id="card_type" required >
+              <option value=""> --Select card Type--</option>
+              <option value="visa">visa</option>
+              <option value="rupay">Rupay</option>
+              <option value="mastercard">mastercard</option>
+          </select>
+
+      <label for="card_number">Card Number* : </label> 
+        <input type="number" name="card_number" id="card_number" required maxlength="16"/>  
+
+      <label for="exp_date">Expiration Date* :</label> 
+        <input type="date" name="exp_date" id="exp_date" class="exp_date" required />
+      <label for="cvv">CVV* :</label>
+        <input type="password" name="cvv" id="cvv" required  maxlength="3"/>
+      
+      <button type="button" class="btn btn-success btn-md w-100 fs-5 my-2">Pay Now</button>
+    </form>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
