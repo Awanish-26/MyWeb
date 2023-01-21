@@ -15,11 +15,24 @@
    text-align: center;
 }
 
-image{
-   image-rendering: ;
+img{
+   width: 240px;
+   height: 240px;
 }
+
+/* media screen for large screen */
+@media screen and (min-width:800px) {
+   p {
+      font-size: 1.2em;
+   }
+}
+
+/* media screen for small screen */
 @media screen and (max-width:500px) {
    body{
       font-size: 1rem;
+   }
+   .img-container{
+      display: none !important;
    }
 }
