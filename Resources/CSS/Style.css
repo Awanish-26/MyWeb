@@ -1,7 +1,6 @@
-/* body {
-   font: 1em ;
-} */
-
+body{
+   margin: 0;
+}
 .message {
    border: 1px solid #62ffa6;
    padding-inline: 16px;
@@ -30,7 +29,7 @@ img{
 /* media screen for small screen */
 @media screen and (max-width:500px) {
    body{
-      font-size: 1rem;
+      font-size: 0.8rem;
    }
    .img-container{
       display: none !important;
