@@ -45,17 +45,6 @@ li{
    color: white !important;
 }
 
-a {
-   font-size: 18px;
-   text-decoration: none;
-   line-height: 32px;
-   color: #bababa;
-}
-
-a:hover {
-   color: #ffffff;
-   transition: all 0.1s;
-}
 
 @media all and (max-width: 640px) {
    .complex {
