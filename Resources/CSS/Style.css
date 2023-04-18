@@ -24,6 +24,11 @@ img{
    p {
       font-size: 1.2em;
    }
+   .border{
+      border-left: 0 !important;
+      border-top-left-radius:0 !important ;
+      border-bottom-left-radius: 0 !important;
+   }
 }
 
 /* media screen for small screen */
