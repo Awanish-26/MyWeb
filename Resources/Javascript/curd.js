@@ -5,24 +5,27 @@ let parentList = document.getElementById('parentList');
 
 function addstudent(e) {
    if (parentList.children[0].className == "emptyMsg") {
-      parentList.children[0].remove()
+      parentList.children[0].remove();
+   }
+   
+   if(addBtn.previousElementSibling.value == ""){
+      window.alert("Empty message to add")
+      return;
    }
    let currentBtn = e.currentTarget;
    let currentInput = currentBtn.previousElementSibling;
-   let currentName = currentInput.value
+   let currentName = currentInput.value;
 
    let newLi = document.createElement('li');
    // newLi.classList.add('list-group-item') ;
-   newLi.classList = "list-group-item d-flex justify-content-between my-auto text-white bg-dark border-bottom border-success align-middle"
+   newLi.classList = "list-group-item d-flex justify-content-between my-auto text-white bg-dark border-bottom border-success align-middle";
    newLi.innerHTML = `<h4 class="flex-grow-1">${currentName}</h4>
-                        <button class="btn btn-warning mx-3" onclick="editChapter(this)">Edit</button>
-                        <button class="btn btn-danger" onclick="removechapter(this)">Remone</button>`
+                     <button class="btn btn-warning mx-3" onclick="editChapter(this)">Edit</button>
+                     <button class="btn btn-danger" onclick="removechapter(this)">Remove</button>`;
 
-
-   parentList.appendChild(newLi)
+   parentList.appendChild(newLi);
 
 }
-
 function removechapter(currElement) {
    currElement.parentElement.remove()
    let parentList = document.getElementById('parentList');
