@@ -15,8 +15,8 @@ function addstudent(e) {
    // newLi.classList.add('list-group-item') ;
    newLi.classList = "list-group-item d-flex justify-content-between my-auto text-white bg-dark border-bottom border-success align-middle"
    newLi.innerHTML = `<h4 class="flex-grow-1">${currentName}</h4>
-                          <button class="btn btn-warning mx-3" onclick="editChapter(this)">Edit</button>
-                          <button class="btn btn-danger" onclick="removechapter(this)">Remone</button>`
+                        <button class="btn btn-warning mx-3" onclick="editChapter(this)">Edit</button>
+                        <button class="btn btn-danger" onclick="removechapter(this)">Remone</button>`
 
 
    parentList.appendChild(newLi)
