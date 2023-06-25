@@ -3,6 +3,8 @@ addBtn.addEventListener('click', addstudent);
 
 let parentList = document.getElementById('parentList');
 
+
+// Adding new elemet
 function addstudent(e) {
    if (parentList.children[0].className == "emptyMsg") {
       parentList.children[0].remove();
@@ -24,8 +26,9 @@ function addstudent(e) {
                      <button class="btn btn-danger" onclick="removechapter(this)">Remove</button>`;
 
    parentList.appendChild(newLi);
-
 }
+
+// Removing a element
 function removechapter(currElement) {
    currElement.parentElement.remove()
    let parentList = document.getElementById('parentList');
