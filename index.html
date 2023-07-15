@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Resources/CSS/Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="FaviconB/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="FaviconB/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="FaviconB/favicon-16x16.png">
@@ -48,7 +49,7 @@
     <!-- Html part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded">
+            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded" data-aos="slide-left">
                 <h3 class="fw-semibold">HTML</h3>
                 <p class="">
                     HTML, in full hypertext markup language, a formatting system for displaying material retrieved over the Internet. Each
@@ -96,7 +97,7 @@
     <!-- Css Part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded">
+            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded" data-aos="slide-right">
                 <h3 class="fw-semibold">CSS</h3>
                 <p class="">
                     CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of
@@ -140,7 +141,7 @@
     <!-- Javascript Part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded">
+            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded" data-aos="slide-left">
                 <h3 class="fw-semibold">JavaScript</h3>
                 <p class="">
                     Javascript (JS) is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly
@@ -180,7 +181,7 @@
     <!-- Python Part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded">
+            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded" data-aos="slide-right">
                 <h3 class="fw-semibold">Python</h3>
                 <p class="">
                     Python is a high level general-purpose programming language. It uses a multi-paradigm approach, meaning it supports
@@ -223,7 +224,7 @@
     <!-- C part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded">
+            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded" data-aos="slide-left">
                 <h3 class="fw-semibold">C</h3>
                 <p class="">
                     C is a general-purpose programming language that is extremely popular, simple, and flexible to use. It is a structured
@@ -266,7 +267,7 @@
     <!-- C++ part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded">
+            <div class="me-md-3 p-3 bg-success bg-opacity-10 border border-success rounded" data-aos="slide-right">
                 <h3 class="fw-semibold">C++</h3>
                 <p class="">
                     C++ is a programming language developed by Bjarne Stroustrup in 1979 at Bell Labs. C++ is regarded as a middle-level
@@ -314,7 +315,7 @@
     <!-- Java part -->
     <section class="bg-opacity-50">
         <div class="conatiner d-md-flex px-3 py-3">
-            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded">
+            <div class="me-md-3 p-3 bg-info bg-opacity-10 border border-info rounded" data-aos="slide-left">
                 <h3 class="fw-semibold">Java</h3>
                 <p class="">
                     Java was created at Sun Microsystems, Inc., where James Gosling led a team of researchers in an effort to create a new
@@ -360,5 +361,34 @@
             <small>Copyright &copy; MyWeb</small>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 </html>
