@@ -43,12 +43,12 @@ function removechapter(currElement) {
 // Editing the Element
 function editChapter(currElement) {
    if (currElement.textContent == "Done") {
-      currElement.textContent == "Edit";
+      currElement.textContent = "Edit";
       let currChapterName = currElement.previousElementSibling.value;
       let currHeading = document.createElement('h3');
       currHeading.className = "flex-grow-1 my-auto";
       currHeading.textContent = currChapterName;
-      currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling)
+      currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling);
    }
    else {
       currElement.textContent = "Done";
@@ -60,5 +60,4 @@ function editChapter(currElement) {
       currInput.value = currChapterName;
       currElement.parentElement.replaceChild(currInput, currElement.previousElementSibling);
    }
-
 }
